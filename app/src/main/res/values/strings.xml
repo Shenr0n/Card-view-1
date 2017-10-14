@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Sike</string>
+
+    <string name="font_awesome">fonts/fontawesome-webfont.ttf</string>
+    <string name="fa_heart_o">&#xf08a;</string>
+    <string name="fa_heart">&#xf004;</string>
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shenron.assignment1.MainActivity">
+
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        card_view:cardBackgroundColor="#CCFF90"
+        card_view:cardElevation="10dp">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageLan"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:layout_margin="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/lannistericon" />
+
+            <TextView
+                android:id="@+id/textViewLan"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_toRightOf="@id/imageLan"
+                android:fontFamily="monospace"
+                android:text="Chaos isn't a pit,
+Chaos is a ladder."
+                android:textSize="16sp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/dateTp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewLan"
+                android:layout_margin="8dp"
+                android:layout_toRightOf="@id/imageLan"
+                android:background="#880E4F"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="2017-09-22"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/petyrB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewLan"
+                android:layout_margin="8dp"
+                android:layout_toRightOf="@id/dateTp"
+                android:text="-Petyr Baelish"
+                android:maxLines="1"
+                android:layout_alignParentEnd="true"
+                android:textAlignment="viewEnd"
+                />
+
+            <TextView
+                android:id="@+id/heart"
+                fontPath="@string/font_awesome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/petyrB"
+                android:text="@string/fa_heart_o"
+                android:textColor="#ff1744"
+                android:textSize="32sp"
+                android:layout_toRightOf="@id/dateTp"
+                android:layout_alignParentRight="true"
+                android:textAlignment="center"
+                tools:ignore="MissingPrefix" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.RecyclerView
+
+</RelativeLayout>
